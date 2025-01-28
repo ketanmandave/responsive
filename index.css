@@ -1,0 +1,142 @@
+body{
+    margin: 10px;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(230, 187, 187)
+
+}
+body::-webkit-scrollbar { 
+    display: none;  
+}
+@media(min-width:320px){
+    .container::-webkit-scrollbar { 
+        display: none;  
+    }
+    .container{
+        margin-left: 15px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        transition: 0.25s;
+    }
+    h1{
+        text-align: center;
+        color: red;
+        transition: 0.25s;
+    }
+    .card1{
+        height: 355px;
+        width: 280px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        transition: 0.25s;
+    }
+    img{
+        border-radius: 10px;
+        height: 250px;
+        width: 280px;
+        transition: 0.25s;
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        transition: 0.25s;
+    }
+    .btn i{
+        font-size: 25px;
+        margin-right: 5px;
+        transition: 0.25s;
+    }
+    .btn button{
+        padding: 5px;
+        border-radius: 20px;
+        border: 1px solid black;
+        background-color: rgb(223, 77, 32);
+        color: white;
+        margin-left: 5px;
+        transition: 0.25s;
+    }
+    p{
+        margin-top: 2px;
+        padding: 2px;
+        transition: 0.25s;
+    }
+    .like{
+        position: relative;
+    }
+    .like i{
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        font-size: 25px;
+        transition: 0.25s;
+    }
+}
+@media(max-width:320px){
+    .container::-webkit-scrollbar { 
+        display: none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        transition: 0.25s;
+        overflow: hidden;
+    }
+    h1{
+        text-align: center;
+        color: red;
+        transition: 0.25s;
+    }
+    .card1{
+        height: 345px;
+        width: 270px;
+        border: 2px solid black;
+        border-radius: 8px;
+        background-color: antiquewhite;
+        transition: 0.25s;
+    }
+    img{
+        border-radius: 8px;
+        height: 240px;
+        width: 270px;
+        transition: 0.25s;
+    }
+    .btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        transition: 0.25s;
+    }
+    .btn i{
+        font-size: 22px;
+        margin-right: 3px;
+        transition: 0.25s;
+    }
+    .btn button{
+        padding: 3px;
+        border: 1px solid black;
+        border-radius: 20px;
+        background-color: rgb(223, 77, 32);
+        color: white;
+        margin-left: 3px;
+        transition: 0.25s;
+    }
+    p{
+        margin-top: 1px;
+        padding: 1px;
+        transition: 0.25s;
+    }
+    .like{
+        position: relative;
+    }
+    .like i{
+        position: absolute;
+        left: 1.75px;
+        top: 1.75px;
+        font-size: 23px;
+        transition: 0.25s;
+    }
+}
